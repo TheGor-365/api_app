@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :bands
-  
+  resources :bands do
+    resources :members
+  end
+
 end
